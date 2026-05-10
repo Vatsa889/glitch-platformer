@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://b02yn5yv30if1"]
+
+[ext_resource type="Script" uid="uid://bpgvot31whsvg" path="res://ram_money.gd" id="1_sq4w3"]
+[ext_resource type="Texture2D" uid="uid://cpv6yoiki30nx" path="res://photos/ram pixel art.png" id="2_wqpbp"]
+[ext_resource type="AudioStream" uid="uid://b1t8pn3hc2acf" path="res://audio/coin-recieved-230517.mp3" id="3_sq4w3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xf5ge"]
+radius = 11.0
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_sq4w3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_xf5ge")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4, 4)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_wqpbp")
+
+[node name="PickupSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_sq4w3")
+bus = &"SFX"

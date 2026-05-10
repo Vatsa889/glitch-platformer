@@ -1,0 +1,14 @@
+# Godot 4+ specific ignores
+.godot/
+
+# OS files
+.DS_Store
+
+# Build exports
+build/
+new build/
+glitch platformer mac/
+build hctg temp/
+
+# Editor backups
+*.import.bak

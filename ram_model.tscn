@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlxwy6vaa85h6"]
+
+[ext_resource type="PackedScene" uid="uid://cnh84iubys1ny" path="res://models/RAM model.glb" id="1_navk0"]
+[ext_resource type="PackedScene" uid="uid://cfqa7oonxdh00" path="res://models/ram spinning animation.glb" id="2_mcyog"]
+
+[node name="RAM model" instance=ExtResource("1_navk0")]
+
+[node name="ram spinning animation" parent="." index="3" instance=ExtResource("2_mcyog")]

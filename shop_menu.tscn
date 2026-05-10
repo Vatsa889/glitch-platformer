@@ -1,0 +1,75 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbje55t5mr1fp"]
+
+[ext_resource type="Script" uid="uid://hncuip7jhgnt" path="res://shop_menu.gd" id="1_u8hot"]
+[ext_resource type="Texture2D" uid="uid://bx0uqrxykmrem" path="res://photos/Black Pixel Background.png" id="2_68nve"]
+[ext_resource type="Texture2D" uid="uid://2ttvcfu0y61l" path="res://photos/shop background no layer 1.png" id="2_rh1mo"]
+[ext_resource type="FontFile" uid="uid://cew6h54gvdhnb" path="res://fonts/Pix32.ttf" id="4_xn0n2"]
+
+[node name="ShopMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u8hot")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_68nve")
+
+[node name="BackgroundImage" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = -1.0
+offset_right = 32.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_rh1mo")
+
+[node name="MoneyLabel" type="Label" parent="."]
+layout_mode = 1
+offset_left = 559.0
+offset_top = 114.0
+offset_right = 560.0
+offset_bottom = 137.0
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 88.0
+offset_top = 55.0
+offset_right = -760.0
+offset_bottom = -49.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 112
+theme_override_constants/v_separation = 112
+columns = 2
+
+[node name="SkinPreview" type="Sprite2D" parent="."]
+position = Vector2(960, 325)
+scale = Vector2(12, 12)
+hframes = 5
+
+[node name="leavebtn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1026.0
+offset_top = 16.0
+offset_right = 1103.0
+offset_bottom = 50.0
+theme_override_fonts/font = ExtResource("4_xn0n2")
+text = "LEAVE"
+
+[connection signal="pressed" from="leavebtn" to="." method="_on_leave_btn_pressed"]
