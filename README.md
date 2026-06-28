@@ -33,3 +33,7 @@ Well most of the game is quite simple; you can think back to the older Mario gam
 - more (detailed) tilesets (bro the game looks so buns right now)
 - tutorial (right now only a couple of text boxes in the first level)
 - mutliplayer support (prolly in a million years)
+
+
+# AI deeclaration
+I used AI to help me make the skin shop also to fix my github repo because I didn't have git on y local repo originally so I kinda just asked google antigravity to fix my repo which also kinda lead to me not commiting a whole lot on my newer hours because those were on my other device which didn't have git on it
